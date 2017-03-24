@@ -1,9 +1,10 @@
+from __future__ import absolute_import
 """
 Package containing a document similarity server, an extension of gensim.
 """
 
 # for IPython tab-completion
-from simserver import SessionServer, SimServer
+from .simserver import SessionServer, SimServer
 
 
 try:
