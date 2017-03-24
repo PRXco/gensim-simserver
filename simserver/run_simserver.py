@@ -15,13 +15,15 @@ Example:
 """
 
 from __future__ import with_statement
+from __future__ import print_function
+from __future__ import absolute_import
 
 import logging
 import os
 import sys
 
 import gensim
-import simserver
+from . import simserver
 
 if __name__ == '__main__':
     logging.basicConfig(format='%(asctime)s : %(levelname)s : %(module)s:%(lineno)d : %(funcName)s(%(threadName)s) : %(message)s')
@@ -32,7 +34,7 @@ if __name__ == '__main__':
 
     # check and process input arguments
     if len(sys.argv) < 2:
-        print globals()['__doc__'] % locals()
+        print(globals()['__doc__'] % locals())
         sys.exit(1)
 
     basename = sys.argv[1]

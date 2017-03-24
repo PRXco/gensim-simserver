@@ -55,7 +55,10 @@ setup(
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
         'Operating System :: OS Independent',
-        'Programming Language :: Python :: 2.5',
+        'Programming Language :: Python :: 2.6',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
         'Topic :: Scientific/Engineering :: Artificial Intelligence',
         'Topic :: Scientific/Engineering :: Information Analysis',
         'Topic :: Text Processing :: Linguistic',
@@ -67,6 +70,7 @@ setup(
         'gensim >= 0.8.5',
         'Pyro4 >= 4.8',
         'sqlitedict >= 1.0.8',
+        'future >= 0.16.0'
     ],
 
     include_package_data = True,
